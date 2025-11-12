@@ -1,0 +1,64 @@
+:root {
+  --color-white: hsl(0, 0%, 100%);
+  --color-black: hsl(0, 0%, 0%);
+
+  --color-grey-950: hsl(255, 22%, 4%);
+  --color-grey-900: hsl(248, 17%, 9%);
+  --color-grey-850: hsl(248, 15%, 11%);
+  --color-grey-800: hsl(248, 10%, 15%);
+  --color-grey-700: hsl(248, 5%, 34%);
+  --color-grey-600: hsl(251, 9%, 53%);
+  --color-grey-200: hsl(252, 11%, 91%);
+
+  --color-green: hsl(127, 100%, 82%);
+  --color-yellow: hsl(42, 91%, 68%);
+  --color-grey-950: hsl(13, 95%, 66%);
+  --color-grey-950: hsl(0, 91%, 63%);
+
+  --color-grey-950: linear-gradient(
+    to right,
+    hsl(248, 17%, 9%),
+    hsl(255, 22%, 4%)
+  );
+
+  --spacing-100: 0.5em;
+  --spacing-200: 1em;
+  --spacing-300: 1.5em;
+  --spacing-400: 2em;
+  --spacing-700: 3.5em;
+  --spacing-1000: 5em;
+  --spacing-1300: 6.5em;
+  --spacing-1600: 8em;
+  --spacing-2000: 10em;
+  --spacing-2200: 11em;
+  --spacing-2300: 11.5em;
+}
+
+@font-face {
+  font-family: "JetBrains Mono";
+  src: url("../fonts/JetBrainsMono-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "JetBrains Mono";
+  src: url("../fonts/JetBrainsMono-Italic-VariableFont_wght.ttf")
+    format("truetype");
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "JetBrains Mono", monospace;
+}
