@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Generator</title>
     <link
       rel="icon"
       type="image/png"
@@ -15,7 +16,7 @@
   <body>
     <main>
       <h1>Password Generator</h1>
-      <form action="/">
+      <form id="generate-password-form" action="/">
         <div class="generated-password-container">
           <input
             type="text"
@@ -26,10 +27,11 @@
           />
           <button
             type="button"
+            id="copy-button"
             class="copy-button"
             aria-label="Copy password to clipboard"
           >
-            <span class="copy-feedback">Copied</span>
+            <span class="copy-feedback hidden">Copied</span>
             <svg
               class="copy-icon"
               width="21"
@@ -50,14 +52,14 @@
               <label id="password-length-label" for="password-length-slider"
                 >Character Length</label
               >
-              <span class="password-length-value">0</span>
+              <span id="password-length-value" class="password-length-value">0</span>
             </div>
             <input
               type="range"
               id="password-length-slider"
               min="0"
-              max="15"
-              value="0"
+              max="18"
+              value="8"
               aria-labelledby="password-length-label"
             />
           </div>
@@ -112,9 +114,8 @@
             <div class="strength-meter">
               <span class="strength-label">Strength</span>
               <div class="strength-indicator">
-                <span class="strength-text">Medium</span>
+                <span class="strength-text hidden">Medium</span>
                 <div class="strength-bars">
-                  <span class="strength-bar"></span>
                   <span class="strength-bar"></span>
                   <span class="strength-bar"></span>
                   <span class="strength-bar"></span>

@@ -129,8 +129,12 @@ form {
   font-weight: bold;
   color: var(--color-white);
   padding: var(--spacing-200);
+  padding-right: 6.5rem;
   background-color: var(--color-grey-800);
   font-size: var(--text-preset-font-size-2);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .copy-button {
@@ -150,10 +154,6 @@ form {
 .copy-button:focus-visible .copy-icon path,
 .copy-button:active .copy-icon path {
   fill: var(--color-white);
-}
-
-.copy-feedback {
-  display: none;
 }
 
 .password-options {
@@ -291,7 +291,6 @@ form {
 }
 
 .strength-text {
-  display: none;
   color: var(--color-white);
 }
 
@@ -322,6 +321,26 @@ form {
   border: 0.125rem solid var(--color-white);
 }
 
+.too-weak {
+  background-color: var(--color-red);
+  border-color: var(--color-red);
+}
+
+.weak {
+  background-color: var(--color-orange);
+  border-color: var(--color-orange);
+}
+
+.medium {
+  background-color: var(--color-yellow);
+  border-color: var(--color-yellow);
+}
+
+.strong {
+  background-color: var(--color-green);
+  border-color: var(--color-green);
+}
+
 .generate-button {
   display: flex;
   justify-content: center;
@@ -347,6 +366,10 @@ form {
 .generate-button:focus-visible .generate-button-icon path,
 .generate-button:active .generate-button-icon path {
   fill: var(--color-green);
+}
+
+.hidden {
+  display: none;
 }
 
 @media (min-width: 48em) {
