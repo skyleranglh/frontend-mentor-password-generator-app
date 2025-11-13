@@ -202,7 +202,7 @@ form {
   background: var(--color-white);
   border-radius: 50%;
   cursor: pointer;
-  border: 2px solid var(--color-white);
+  border: 0.125rem solid var(--color-white);
   transition: background-color 0.2s ease;
 }
 
@@ -217,7 +217,7 @@ form {
   background: var(--color-white);
   border-radius: 50%;
   cursor: pointer;
-  border: 2px solid var(--color-white);
+  border: 0.125rem solid var(--color-white);
   transition: background-color 0.2s ease;
 }
 
@@ -249,9 +249,9 @@ form {
   position: relative;
   -webkit-appearance: none;
   appearance: none;
-  width: 20px;
-  height: 20px;
-  border: 2px solid var(--color-white);
+  width: 1.25rem;
+  height: 1.25rem;
+  border: 0.125rem solid var(--color-white);
   background-color: transparent;
   cursor: pointer;
 }
@@ -271,10 +271,10 @@ form {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) rotate(45deg);
-  width: 6px;
-  height: 12px;
+  width: 0.375rem;
+  height: 0.75rem;
   border: solid var(--color-grey-800);
-  border-width: 0 3px 3px 0;
+  border-width: 0 0.1875rem 0.1875rem 0;
 }
 
 .strength-meter {
@@ -316,10 +316,10 @@ form {
 
 .strength-bar {
   display: flex;
-  width: 10px;
-  height: 28px;
+  width: 0.625rem;
+  height: 1.75rem;
   background-color: transparent;
-  border: 2px solid var(--color-white);
+  border: 0.125rem solid var(--color-white);
 }
 
 .generate-button {
@@ -339,7 +339,7 @@ form {
 .generate-button:focus-visible,
 .generate-button:active {
   background-color: transparent;
-  border: 2px solid var(--color-green);
+  border: 0.125rem solid var(--color-green);
   color: var(--color-green);
 }
 
@@ -349,10 +349,10 @@ form {
   fill: var(--color-green);
 }
 
-@media (min-width: 768px) {
+@media (min-width: 48em) {
   main {
     gap: var(--spacing-400);
-    width: 70%;
+    width: 33.75rem;
   }
 
   h1 {
@@ -397,9 +397,9 @@ form {
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 64em) {
   main {
-    width: 35%;
+    width: 28.125rem;
   }
 
   h1 {
