@@ -130,7 +130,7 @@ form {
 
 #generated-password {
   font-weight: bold;
-  color: var(--color-white);
+  color: var(--color-grey-200);
   padding: var(--spacing-200);
   padding-right: 6.5rem;
   background-color: var(--color-grey-800);
@@ -165,7 +165,7 @@ form {
   font-size: var(--text-preset-font-size-4);
   line-height: var(--text-preset-line-height-4);
   gap: var(--spacing-400);
-  color: var(--color-white);
+  color: var(--color-grey-200);
   background-color: var(--color-grey-800);
   padding: var(--spacing-200);
 }
@@ -202,10 +202,10 @@ form {
   appearance: none;
   width: 1.75rem;
   height: 1.75rem;
-  background: var(--color-white);
+  background: var(--color-grey-200);
   border-radius: 50%;
   cursor: pointer;
-  border: 0.125rem solid var(--color-white);
+  border: 0.125rem solid var(--color-grey-200);
   transition: background-color 0.2s ease;
 }
 
@@ -217,10 +217,10 @@ form {
 #password-length-slider::-moz-range-thumb {
   width: 1.75rem;
   height: 1.75rem;
-  background: var(--color-white);
+  background: var(--color-grey-200);
   border-radius: 50%;
   cursor: pointer;
-  border: 0.125rem solid var(--color-white);
+  border: 0.125rem solid var(--color-grey-200);
   transition: background-color 0.2s ease;
 }
 
@@ -254,7 +254,7 @@ form {
   appearance: none;
   width: 1.25rem;
   height: 1.25rem;
-  border: 0.125rem solid var(--color-white);
+  border: 0.125rem solid var(--color-grey-200);
   background-color: transparent;
   cursor: pointer;
 }
@@ -294,7 +294,7 @@ form {
 }
 
 .strength-text {
-  color: var(--color-white);
+  color: var(--color-grey-200);
 }
 
 .options-footer {
@@ -321,7 +321,7 @@ form {
   width: 0.625rem;
   height: 1.75rem;
   background-color: transparent;
-  border: 0.125rem solid var(--color-white);
+  border: 0.125rem solid var(--color-grey-200);
 }
 
 .too-weak {
@@ -354,6 +354,7 @@ form {
   text-transform: uppercase;
   padding: var(--spacing-200);
   background-color: var(--color-green);
+  border: 0.125rem solid var(--color-green);
   font-size: 1rem;
 }
 
